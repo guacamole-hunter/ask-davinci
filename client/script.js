@@ -26,9 +26,9 @@ function typeText(element, text) {
     let interval = setInterval(() => {
         if (index < text.length) {
             element.innerHTML += text.charAt(index)
-            index++
+            index++;
         } else {
-            clearInterval(interval)
+            clearInterval(interval);
         }
     }, 20)
 }
@@ -39,9 +39,9 @@ function typeText(element, text) {
 function generateUniqueId() {
     const timestamp = Date.now();
     const randomNumber = Math.random();
-    const hexadecimalString = randomNumber.toString(16);
+    const hexString = randomNumber.toString(16);
 
-    return `id-${timestamp}-${hexadecimalString}`;
+    return `id-${timestamp}-${hexString}`;
 }
 
 function chatStripe(isAi, value, uniqueId) {
@@ -103,6 +103,7 @@ const handleSubmit = async (e) => {
         const data = await response.json();
         const parsedData = data.bot.trim() // trims any trailing spaces/'\n' 
 
+        console.log(parsedData)
         typeText(messageDiv, parsedData)
     } else {
         const err = await response.text()
