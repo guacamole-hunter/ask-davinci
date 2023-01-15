@@ -88,9 +88,9 @@ const handleSubmit = async (e) => {
 
     const response = await fetch('https://davinci-4qoj.onrender.com/', {
         method: 'POST',
-        Authorization: `Bearer ${process.env.OPENAI_SECRET_KEY}`,
         headers: {
             'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.OPENAI_SECRET_KEY}`,
         },
         body: JSON.stringify({
             prompt: data.get('prompt')
