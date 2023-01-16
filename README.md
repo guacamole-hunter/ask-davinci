@@ -4,18 +4,18 @@
 
 ## How to run locally
 
-Please start with cloning repository
-then cd into /client folder 
-Please change url to https://localhost:5000 in /client/script.js on line 89
-
-`npm install`
-`npm run dev`
-
-cd into /server
-
-`npm install`
-`npm start`
-
+Please start with cloning repository <br>
+then cd into /client folder <br>
+Please change url to https://localhost:5000 in /client/script.js on line 89 <br>
+<br>
+`npm install` <br>
+`npm run dev` <br>
+<br> 
+cd into /server <br> 
+<br> 
+`npm install` <br> 
+`npm start` <br> 
+<br> 
 
 
 
